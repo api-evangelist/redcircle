@@ -1,7 +1,17 @@
 aid: redcircle
 name: RedCircle
-description: RedCircle is a company surfaced as a portfolio company of bloomberg-beta and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  RedCircle is a podcast advertising, hosting, and monetization platform founded
+  in 2018 that turns podcast host-read endorsements into measurable results for
+  brands and creators. For podcasters it provides podcast hosting, RSS
+  distribution to directories, dynamic ad insertion, a cross-promotions
+  marketplace, instant payouts, automated transcript and video generation, and
+  audience analytics. For brands it operates a fully managed host-read ad
+  platform that pairs proprietary data with authentic creator voices to run and
+  measure campaigns at scale. RedCircle also documents OpenRAP, its remote
+  ad-pipeline / VAST configuration for dynamic ad insertion. The platform is
+  offered as SaaS tiers (Growth, Pro, and Enterprise) rather than as a public
+  developer API; there is no published developer portal, OpenAPI, or SDK.
 url: https://raw.githubusercontent.com/api-evangelist/redcircle/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +19,62 @@ x-backed-by:
 - bloomberg-beta
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://app.redcircle.com/favicon.ico
 tags:
 - Company
+- Podcasting
+- Podcast Hosting
+- Podcast Advertising
+- Advertising
+- Monetization
+- Dynamic Ad Insertion
+- Creator Economy
+- Media
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
 common:
+- type: DomainSecurity
+  url: security/redcircle-domain-security.yml
 - type: Website
-  url: https://www.getredcircle.com/
+  url: https://redcircle.com/
+- type: Pricing
+  url: https://redcircle.com/pricing
+- type: SignUp
+  url: https://redcircle.com/sign-up
+- type: Login
+  url: https://app.redcircle.com/
+- type: Blog
+  url: https://redcircle.com/blog/
+- type: BlogRSS
+  url: https://redcircle.com/blog/feed
+- type: Support
+  url: https://support.redcircle.com
+- type: HelpCenter
+  url: https://support.redcircle.com
+- type: TermsOfService
+  url: https://redcircle.com/terms
+- type: PrivacyPolicy
+  url: https://redcircle.com/privacy
