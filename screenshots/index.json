@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "redcircle",
+    "captured_at": "2026-10-11T192416",
+    "source_url": "https://redcircle.com/",
+    "source_type": "Website",
+    "file": "redcircle-2026-10-11T192416.png",
+    "bytes": 203600,
+    "capture": "playwright-local"
+  }
+]
