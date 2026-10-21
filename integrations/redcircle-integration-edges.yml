@@ -1,0 +1,110 @@
+edges:
+- partner_name: Podcast Index (apps directory)
+  partner: podcastindex
+  partner_match: register
+  type: register
+  direction: partner-built
+  channel: standard-directory
+  relationship: standard-participant
+  evidence: https://podcastindex.org/apps
+  category: open podcast namespace (Podcasting 2.0)
+  contract_reference:
+    register: Podcast Index apps directory (podcastindex.org/api/apps)
+    standard: 'podcast: RSS namespace (Podcasting 2.0)'
+    spec_file: null
+    role: podcastindex-listed-app
+    registered_name: RedCircle
+    register_id: https://redcircle.com
+    app_types:
+    - hosting
+    supported_elements:
+    - Funding
+    - GUID
+    - Locked
+    - Podping
+    - Transcript
+    matched_domain: redcircle.com
+    matched_by: domain
+    signal_note: 'participation only: the directory is self-listed and tests nothing (no certified_products); supported_elements
+      is a per-edge signal, never counted'
+    detected_by: sweep-podcasting-2-0.py
+    detected: '2026-10-21'
+  detected_by: sweep-podcasting-2-0.py
+  first_seen: '2026-10-21'
+- partner_name: Podcast Namespace (element support)
+  partner: podcastindex
+  partner_match: register
+  type: register
+  direction: partner-built
+  channel: standard-directory
+  relationship: standard-participant
+  evidence: https://github.com/Podcastindex-org/podcast-namespace/blob/main/docs/element-support.md
+  category: open podcast namespace (Podcasting 2.0)
+  contract_reference:
+    register: podcast namespace element support (Podcastindex-org/podcast-namespace docs/element-support.md)
+    standard: 'podcast: RSS namespace (Podcasting 2.0)'
+    spec_file: null
+    role: namespace-implementer
+    registered_name: RedCircle
+    register_id: https://redcircle.com
+    supported_elements:
+    - Funding
+    - GUID
+    - Locked
+    - Transcript
+    matched_domain: redcircle.com
+    matched_by: domain
+    signal_note: 'participation only: production support announced per element; elements are a per-edge signal,
+      never counted'
+    detected_by: sweep-podcasting-2-0.py
+    detected: '2026-10-21'
+  detected_by: sweep-podcasting-2-0.py
+  first_seen: '2026-10-21'
+- partner_name: Apple (own)
+  partner: apple
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://redcircle.com
+  mirror_of: apple/integrations/apple-integration-edges.yml
+  apps:
+  - RedCircle
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: podcast hosting
+- partner_name: Spotify (own)
+  partner: spotify
+  partner_match: mirror
+  mirror_match: domain
+  type: marketplace
+  relationship: platform-app
+  direction: third-party
+  channel: partner-built
+  marketplace: own
+  evidence: https://support.redcircle.com/distributing-your-podcast-to-spotify
+  mirror_of: spotify/integrations/spotify-integration-edges.yml
+  apps:
+  - RedCircle
+  listing_count: 1
+  detected: '2026-10-21'
+  detected_by: mirror-platform-listings.py
+  category: podcast hosting
+generated: '2026-10-21'
+method: searched
+source:
+- https://podcastindex.org/api/apps
+- https://raw.githubusercontent.com/Podcastindex-org/podcast-namespace/main/docs/element-support.md
+- https://iabtechlab.com/compliance-programs/compliant-companies/
+- https://podcasters.apple.com/partner-search
+- https://support.spotify.com/us/creators/article/getting-your-podcast-on-spotify/
+checked:
+- https://iabtechlab.com/compliance-programs/compliant-companies/
+- https://podcasters.apple.com/partner-search
+- https://podcastindex.org/api/apps
+- https://raw.githubusercontent.com/Podcastindex-org/podcast-namespace/main/docs/element-support.md
+- https://support.spotify.com/us/creators/article/getting-your-podcast-on-spotify/
